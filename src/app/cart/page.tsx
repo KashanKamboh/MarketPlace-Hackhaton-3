@@ -12,6 +12,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Swal from "sweetalert2";
 import { Product } from "@/sanity/lib/sanity";
 import { useRouter } from "next/navigation";
+import AuthGaurd from "../components/AuthGaurd";
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState<Product[]>([]);
@@ -93,6 +94,7 @@ const CartPage = () => {
   };
 
   return (
+    <AuthGaurd>
     <div className="p-6 bg-gray-100 min-h-screen">
       <h1 className="text-2xl font-bold mb-6 text-gray-800">Shopping Cart</h1>
 
@@ -165,6 +167,7 @@ const CartPage = () => {
         </div>
       )}
     </div>
+    </AuthGaurd>
   );
 };
 

@@ -8,8 +8,8 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row bg-white shadow-md rounded-3xl max-w-6xl w-full overflow-hidden">
           {/* Left Side - Form */}
           <div className="flex-1 p-6 lg:p-12">
-            <h2 className="text-3xl text-gray-900">
-              Get In <span className="text-yellow-400">Touch</span>
+            <h2 className="text-3xl text-gray-900 font-bold">
+              Get In <span className="text-blue-900">Touch</span>
             </h2>
             <p className="text-sm text-gray-900 mt-4 leading-relaxed">
               Have a specific inquiry or looking to explore new opportunities? Our
